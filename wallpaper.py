@@ -21,5 +21,5 @@ class Wallpaper :
 
 
 if __name__ == "__main__":
-    a = Wallpaper(dirrectory="/home/youbyoub/Wallpaper")
-    print(a.choose_wallpaper())
+    wallpaper = Wallpaper(dirrectory="/home/youbyoub/Wallpaper")
+    print(wallpaper.choose_wallpaper())
