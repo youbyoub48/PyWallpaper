@@ -1,6 +1,7 @@
 import random, os
 
 from glob import glob
+from pathlib import Path
 
 class Wallpaper :
     def __init__(self, dirrectory):
@@ -21,5 +22,6 @@ class Wallpaper :
 
 
 if __name__ == "__main__":
-    wallpaper = Wallpaper(dirrectory="/home/youbyoub/Wallpaper")
+    wallpaper_path = os.path.join(Path.home(), "Wallpaper")
+    wallpaper = Wallpaper(dirrectory=wallpaper)
     print(wallpaper.choose_wallpaper())
